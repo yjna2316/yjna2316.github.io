@@ -37,9 +37,9 @@ nav:
   Home:
     - '/'
   Blog:
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
+    - '/Categories/'
+    - { TIL: '/blog/categories/' }
+    - { Ruby & Rails: '/blog/tags/' }
   About:
     - '/about/'
   Github Project:

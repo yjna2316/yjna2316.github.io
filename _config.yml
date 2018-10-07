@@ -39,8 +39,8 @@ nav:
   Categories:
     - '/categories/'
     - { TIL (Today I Learned): '/blog/categories/#til' }
-    - { Ruby & Rails: 'blog/categories/#ror' }
-    - { Database: 'blog/categories/#db' }
+    - { Ruby & Rails: '/blog/categories/#ror' }
+    - { Database: '/blog/categories/#db' }
     - { Tags: '/blog/tags/' }
   About:
     - '/about/'

@@ -28,7 +28,7 @@ author:
   description: NBT BackEnd Developer
   gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
-    linkedin:  https://www.linkedin.com/in/lizhihao
+    linkedin:  https://www.linkedin.com/in/yoonji-na-8b937a112
     github:    https://github.com/yjna2316
     email:     yjna2316@gmail.com
 
@@ -42,8 +42,6 @@ nav:
     - { Ruby & Rails: '/blog/tags/' }
   About:
     - '/about/'
-  Github Project:
-    - 'https://github.com/yjna2316'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'

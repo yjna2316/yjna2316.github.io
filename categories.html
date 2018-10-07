@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Category
+layout: page
+title: Categories
 ---
 <!DOCTYPE html>
 <html>
@@ -42,7 +42,7 @@ title: Category
       <hr/>
 
       <div class="tags-expo-section">
-        <a href="/blog/"><h4 id="shortcut"><img id="shortcut-img" src="/public/mango.png">최근 글 바로가기</h4></a>
+        <a href="/blog/"><h4 id="shortcut"><img id="shortcut-img" src="/public/mango.jpg">최근 글 바로가기</h4></a>
         <ul class="tags-expo-posts">
           {% for post in site.posts offset: 0 limit: 10  %}
           <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">

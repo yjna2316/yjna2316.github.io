@@ -2,35 +2,35 @@
 layout: page
 title: Categories
 ---
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- jquery 추가 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-      .category-title{
+      .category-title {
         cursor: pointer;
       }
-      .category-title:hover > h2{
+      .category-title:hover > h2 {
         text-decoration: underline;
       }
-      .tags-expo-posts{
+      .tags-expo-posts {
         display: block;
       }
-      #shortcut{
+      #shortcut {
         font-size: 1.1rem;
         color: rgba(49, 49, 49, 0.82);
       }
 
-      #shortcut-img{
-        width : 30px;
-        display : inline;
-        margin-right : 9px;
-        vertical-align : -webkit-baseline-middle;
+      #shortcut-img {
+        width: 30px;
+        display: inline;
+        margin-right: 9px;
+        vertical-align: -webkit-baseline-middle;
       }
-      </style>
-
+    </style>
   </head>
   <body>
     <div class="tags-expo">
@@ -39,12 +39,16 @@ title: Categories
         <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
         {% endfor %}
       </div>
-      <hr/>
+      <hr />
 
       <div class="tags-expo-section">
-        <a href="/blog/"><h4 id="shortcut"><img id="shortcut-img" src="/public/mango.jpg">최근 글 바로가기</h4></a>
+        <a href="/blog/"
+          ><h4 id="shortcut">
+            <img id="shortcut-img" src="/public/mango.jpg" />최근 글 바로가기
+          </h4></a
+        >
         <ul class="tags-expo-posts">
-          {% for post in site.posts offset: 0 limit: 10  %}
+          {% for post in site.posts offset: 0 limit: 10 %}
           <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
             <li>
               {{ post.title }}
@@ -54,16 +58,17 @@ title: Categories
           {% endfor %}
         </ul>
 
-
         {% for tag in site.categories %}
-        <a class="category-title"><h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2></a>
+        <a class="category-title"
+          ><h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2></a
+        >
         <ul class="tags-expo-posts">
           {% for post in tag[1] %}
-            <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-          <li>
-            {{ post.title }}
-          <small class="post-date">{{ post.date | date_to_string }}</small>
-          </li>
+          <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+            <li>
+              {{ post.title }}
+              <small class="post-date">{{ post.date | date_to_string }}</small>
+            </li>
           </a>
           {% endfor %}
         </ul>
@@ -71,21 +76,17 @@ title: Categories
       </div>
     </div>
 
-  <!-- 카테고리 글 숨김, 표시 전환 코드 -->
-  <script type="text/javascript">
-
-    $(".category-title").click(function(){
-
-      if ($(this).next().css('display') === 'block'){
-        $(this).next().slideUp()
-        $(this).children().css("color", "#393939")
-      }else{
-        $(this).next().slideDown('slow')
-        $(this).children().css("color", "#ec4c6a")
-      }
-    })
-
-
-  </script>
+    <!-- 카테고리 글 숨김, 표시 전환 코드 -->
+    <script type="text/javascript">
+      $(".category-title").click(function () {
+        if ($(this).next().css("display") === "block") {
+          $(this).next().slideUp();
+          $(this).children().css("color", "#393939");
+        } else {
+          $(this).next().slideDown("slow");
+          $(this).children().css("color", "#ec4c6a");
+        }
+      });
+    </script>
   </body>
 </html>

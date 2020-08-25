@@ -1,10 +1,10 @@
 # Site Info
-title: 'Mangos Dev history'
-tagline: 'BackEnd Developer, Mangos blog'
-description: '개발을 하면서 공부하고 배운점 느낀점을 기록하는 곳입니다.'
+title: "Jay's Dev history"
+tagline: "BackEnd Developer, Jay's blog"
+description: "개발을 하면서 배운점 느낀점을 기록하는 곳입니다."
 baseurl: ""
 url: http://yjna2316.github.io
-logo: '/public/mango.jpg'
+logo: "/public/mango.jpg"
 
 # Site configurations
 gems:
@@ -17,37 +17,43 @@ sass:
   style: compressed
   sass_dir: _scss
 paginate: 5
-paginate_path: '/blog/page:num'
+paginate_path: "/blog/page:num"
 permalink: pretty
 
 version: 1.0.0
 
 # About/contact
 author:
-  name: Mango(Yoonji Na)
-  description: NBT BackEnd Developer
+  name: Jay(Yoonji Na)
+  description: BackEnd Developer
   #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
-    linkedin:  https://www.linkedin.com/in/yoonji-na-8b937a112
-    github:    https://github.com/yjna2316
-    email:     mailto:yjna2316@gmail.com
+    linkedin: https://www.linkedin.com/in/yoonji-na-8b937a112
+    github: https://github.com/yjna2316
+    email: mailto:yjna2316@gmail.com
 
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - '/'
+    - "/"
   Categories:
-    - '/categories/'
-    - { TIL (Today I Learned): '/blog/categories/#til' }
-    - { Ruby & Rails: '/blog/categories/#ror' }
-    - { Database: '/blog/categories/#db' }
-    - { Tags: '/blog/tags/' }
+    - "/categories/"
+    - { TIL (Today I Learned): "/blog/categories/#til" }
+    - { Algorithm: "/blog/categories/#algorithm" }
+    - { CSS/HTML: "/blog/categories/#frontend" }
+    - { Database: "/blog/categories/#db" }
+    - { DataStructure: "/blog/categories/#datastructure" }
+    - { JAVA: "/blog/categories/#java" }
+    - { JAVASCRIPT: "/blog/categories/#js" }
+    - { Spring: "/blog/categories/#springboot" }
+    - { Ruby & Rails: "/blog/categories/#ror" }
+    - { Tags: "/blog/tags/" }
   About:
-    - '/about/'
+    - "/about/"
 
 # Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+tag_page: "/blog/tags/"
+category_page: "/blog/categories/"
 
 hero:
   image: /public/img/we_will_be_giants_by_yalestewart.jpg
@@ -55,5 +61,5 @@ hero:
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: '' #'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'yjna2316-github-io' # leave blank if you don't want disqus
+google_analytics_token: "" #'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: "yjna2316-github-io" # leave blank if you don't want disqus

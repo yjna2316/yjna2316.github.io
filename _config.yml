@@ -1,10 +1,10 @@
 # Site Info
 title: "Jay's Dev history"
-tagline: "BackEnd Developer, Jay's blog"
+tagline: "BackEnd Developer, Love Crossfit, welcome to Jay's blog"
 description: "개발을 하면서 배운점 느낀점을 기록하는 곳입니다."
 baseurl: ""
 url: http://yjna2316.github.io
-logo: "/public/mango.jpg"
+logo: "/public/img/mango.jpg"
 
 # Site configurations
 gems:
@@ -25,7 +25,7 @@ version: 1.0.0
 # About/contact
 author:
   name: Jay(Yoonji Na)
-  description: BackEnd Developer
+  description: BackEnd Developer interested in the FrontEnd. Love crossfit and being healthy.
   #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     linkedin: https://www.linkedin.com/in/yoonji-na-8b937a112
@@ -36,9 +36,9 @@ author:
 nav:
   Home:
     - "/"
-  Categories:
+  Category:
     - "/categories/"
-    - { TIL (Today I Learned): "/blog/categories/#til" }
+    - { Projects: "/blog/categories/#projects" }
     - { Algorithm: "/blog/categories/#algorithm" }
     - { CSS/HTML: "/blog/categories/#frontend" }
     - { Database: "/blog/categories/#db" }
@@ -46,7 +46,7 @@ nav:
     - { JAVA: "/blog/categories/#java" }
     - { JAVASCRIPT: "/blog/categories/#js" }
     - { Spring: "/blog/categories/#springboot" }
-    - { Ruby & Rails: "/blog/categories/#ror" }
+    - { NodeJS & Express: "/blog/categories/#nodejs" }
     - { Tags: "/blog/tags/" }
   About:
     - "/about/"

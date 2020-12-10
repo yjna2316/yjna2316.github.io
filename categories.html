@@ -33,6 +33,7 @@ title: Categories
     </style>
   </head>
   <body>
+    <!-- tags -->
     <div class="tags-expo">
       <div class="tags-expo-list">
         {% for tag in site.categories %}
@@ -44,7 +45,7 @@ title: Categories
       <div class="tags-expo-section">
         <a href="/blog/"
           ><h4 id="shortcut">
-            <img id="shortcut-img" src="/public/img/mango.jpg" />최근 글
+            <img id="shortcut-img" src="{{ site.logo }}" />최근 글
             바로가기
           </h4></a
         >
@@ -58,11 +59,12 @@ title: Categories
           </a>
           {% endfor %}
         </ul>
-
+<!-- post list -->
         {% for tag in site.categories %}
         <a class="category-title"
           ><h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2></a
         >
+        <h1>{{ tag[0] | slugify }}</h1>
         <ul class="tags-expo-posts">
           {% for post in tag[1] %}
           <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">

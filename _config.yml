@@ -1,7 +1,7 @@
 # Site Info
 title: "Jay's Dev history"
-tagline: "BackEnd Developer, Love Crossfit, welcome to Jay's blog"
-description: "개발을 하면서 배운점 느낀점을 기록하는 곳입니다."
+tagline: "BackEnd Developer, Love Crossfit, Welcome to Jay's blog"
+description: "개발을 하면서 배운점 했던 고민들을 기록하는 장소입니다."
 baseurl: ""
 url: http://yjna2316.github.io
 logo: "/public/img/mango.jpg"
@@ -17,7 +17,7 @@ sass:
   style: compressed
   sass_dir: _scss
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: '/blog/page:num'
 permalink: pretty
 
 version: 1.0.0
@@ -35,18 +35,16 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - "/"
+    - "/blog/"
   Category:
-    - "/categories/"
-    - { Projects: "/blog/categories/#projects" }
-    - { Algorithm: "/blog/categories/#algorithm" }
-    - { CSS/HTML: "/blog/categories/#frontend" }
-    - { Database: "/blog/categories/#db" }
-    - { DataStructure: "/blog/categories/#datastructure" }
+    - "/"
     - { JAVA: "/blog/categories/#java" }
-    - { JAVASCRIPT: "/blog/categories/#js" }
     - { Spring: "/blog/categories/#springboot" }
-    - { NodeJS & Express: "/blog/categories/#nodejs" }
+    - { 자료구조: "/blog/categories/#datastructure" }
+    - { DB: "/blog/categories/#db" }
+    - { CS: "/blog/categories/#cs" }
+    - { Algorithm: "/blog/categories/#algorithm" }
+    - { Projects: "/blog/categories/#projects" }
     - { Tags: "/blog/tags/" }
   About:
     - "/about/"
@@ -55,11 +53,16 @@ nav:
 tag_page: "/blog/tags/"
 category_page: "/blog/categories/"
 
-hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
-
 # Puglins
 mathjax: true # whether support mathjax
 google_analytics_token: "" #'UA-00000000-1' # leave blank if you don't want google analytics
 disqus_short_name: "yjna2316-github-io" # leave blank if you don't want disqus
+
+# Use the following plug-ins
+gems:
+  - jekyll-paginate
+
+# About Image
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>

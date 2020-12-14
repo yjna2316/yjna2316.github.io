@@ -38,10 +38,10 @@ nav:
     - "/blog/"
   Category:
     - "/"
-    - { JAVA: "/blog/categories/#java" }
+    - { Java: "/blog/categories/#java" }
     - { Spring: "/blog/categories/#springboot" }
     - { 자료구조: "/blog/categories/#datastructure" }
-    - { DB: "/blog/categories/#db" }
+    - { Database: "/blog/categories/#db" }
     - { CS: "/blog/categories/#cs" }
     - { Algorithm: "/blog/categories/#algorithm" }
     - { Projects: "/blog/categories/#projects" }

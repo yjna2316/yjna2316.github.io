@@ -39,9 +39,9 @@ nav:
   Category:
     - "/"
     - { Java: "/blog/categories/#java" }
-    - { Spring: "/blog/categories/#springboot" }
-    - { 자료구조: "/blog/categories/#datastructure" }
-    - { Database: "/blog/categories/#db" }
+    - { Spring: "/blog/categories/#spring" }
+    - { 자료구조: "/blog/categories/#자료구조" }
+    - { Database: "/blog/categories/#database" }
     - { CS: "/blog/categories/#cs" }
     - { Algorithm: "/blog/categories/#algorithm" }
     - { Projects: "/blog/categories/#projects" }

@@ -3,7 +3,7 @@ layout: post
 title: Maven vs Gradle
 category: Spring
 tags: [Spring, 스터디, Maven, Gradle, 빌드툴, 빌드]
-permalink: /study/:year/:month/:day/:title/
+permalink: /spring/:year/:month/:day/:title/
 comments: true
 ---
 

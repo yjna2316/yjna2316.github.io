@@ -46,7 +46,7 @@ nav:
     - { Database: "/blog/categories/#database" }
     - { CS: "/blog/categories/#cs" }
     - { Algorithm: "/blog/categories/#algorithm" }
-    - { Projects: "/blog/categories/#projects" }
+    # - { Projects: "/blog/categories/#projects" }
     - { Tags: "/blog/tags/" }
   About:
     - "/about/"

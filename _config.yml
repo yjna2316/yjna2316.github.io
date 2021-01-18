@@ -39,7 +39,7 @@ nav:
   Category:
     - "/"
     - { Java: "/blog/categories/#java" }
-    - { Web: "/blog/categories/#web" }
+    - { Tech: "/blog/categories/#tech" }
     - { Spring: "/blog/categories/#spring" }
     - { Study: "/blog/categories/#study" }
     - { 자료구조: "/blog/categories/#자료구조" }

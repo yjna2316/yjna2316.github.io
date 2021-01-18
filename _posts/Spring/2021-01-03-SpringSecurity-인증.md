@@ -7,7 +7,17 @@ permalink: /spring/:year/:month/:day/:title/
 comments: true
 ---
 
-# Spring Security
+# Index
+
+- Spring Security 인증
+  - Spring Security 아키텍처
+  - Spring Security 인증 과정
+- 정리
+- References
+
+---
+
+# Spring Security 인증
 
 ## Spring Security 아키텍처
 
@@ -125,11 +135,15 @@ comments: true
 
 # 정리
 
-지금까지 우리는 스프링 시큐리티의 동작원리 그리고 핵심 개념인 인증과 인가 처리 프로세스에 대해 알아 보았다. 인증이란 유저의 신원을 확인하는 과정이며 인가란 요청한 리소스에 접근할 수 있는 권한이 있는 유저인지 확인하는 과정이다. 스프링 시큐리티는 이러한 인증과 권한을 구현할 수 있도록 도와주는 프레임워크이기 때문에 주어진 틀내에서 우리 상황에 맞게 필요한 코드를 그 틀을 해치지 않으면서 잘 끼워맞춰 개발하면 된다.
+지금까지 우리는 스프링 시큐리티의 동작원리 그리고 인증 처리 프로세스에 대해 알아 보았다.
 
-스프링 시큐리티는 필터 기반으로 동작하며, 인증 과정은 AuthenticationFilter에서 AuthenticationManager, AuthenticationProvider(s), UserDetailsService를 통해 이루어진다. 여기서 특이한 점은 인증 전과 인증 후에 Authentication Token이 만들어지는데 principal 내용이 달라진다는 것이다. (인증전 principal 타입은 String, 인증 후 principal 타입은 Object)
+- 인증이란 유저의 신원을 확인하는 과정이다.
 
-만약 JWT 토큰을 사용하기 위해 우리가 직접 구현을 해야한다면(커스텀) 기존 시큐리티의 주어진 구조를 따르면서 필요한 코드를 집어 넣어 개발해야 한다. 대신 스프링은 우리가 새로 구현한 내용들은 - ex) AuthenticationManager가 우리가 만든 provider를 사용할 수 있도록 - 설정 파일에 빈으로 등록해주면 된다.
+- 스프링 시큐리티는 필터 기반으로 동작하며, 인증 과정은 AuthenticationFilter에서 AuthenticationManager, AuthenticationProvider(s), UserDetailsService를 통해 이루어진다. 여기서 특이한 점은 인증 전과 인증 후에 Authentication Token이 만들어지는데 principal 내용이 달라진다는 것이다. (인증전 principal 타입은 String, 인증 후 principal 타입은 Object)
+
+- 만약 JWT 토큰을 사용하기 위해 우리가 직접 구현을 해야한다면(커스텀) 기존 시큐리티의 주어진 구조를 따르면서 필요한 코드를 집어 넣어 개발해야 한다. 대신 스프링은 우리가 새로 구현한 내용들은 - ex) AuthenticationManager가 우리가 만든 provider를 사용할 수 있도록 - 설정 파일에 빈으로 등록해주면 된다.
+
+다음 포스트에서는 인가 처리 과정에 대해 알아보자.
 
 ## References
 

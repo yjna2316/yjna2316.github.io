@@ -38,6 +38,7 @@ nav:
     - "/blog/"
   Category:
     - "/"
+    - { Books: "/blog/categories/#books" }
     - { Java: "/blog/categories/#java" }
     - { Tech: "/blog/categories/#tech" }
     - { Spring: "/blog/categories/#spring" }
@@ -53,7 +54,7 @@ nav:
 tag_page: "/blog/tags/"
 category_page: "/blog/categories/"
 
-# Puglins
+# Plugins
 mathjax: true # whether support mathjax
 google_analytics_token: "" #'UA-00000000-1' # leave blank if you don't want google analytics
 disqus_short_name: "yjna2316-github-io" # leave blank if you don't want disqus
